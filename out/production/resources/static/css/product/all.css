@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* * {outline:1px solid red;} */
+.row:hover {
+   background-color : yellow;
+}
+.body_1{
+   height:30px;
+   background-color: black;
+ }
+ .body_2{
+   height:100px;
+   background-color: aqua;
+ }
+ .body_3{
+   background-color: lightyellow;
+   display: flex;
+   height:700px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .body_4{
+   height:30px;
+   background-color: black;
+ }
+ .body_5{
+   height:150px;
+   background-color: gray;
+ }
+ .inbody{
+   width: 800px;
+   background-color: white;
+   display: flex;
+   height:600px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .data{
+   width: 700px;
+ }
+ .line{
+   outline: 3px solid black;
+ }
+ .bodydata{
+   margin:0px;
+   display: grid;
+ }

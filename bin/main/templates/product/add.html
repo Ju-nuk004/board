@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시판 등록</title>
+</head>
+<body>
+  <h3>게시판 등록</h3>
+  <form action="/products/add" method="post">
+    <div><label for="title">제목</label><input id="title" name="title" type="text"></div>
+    <div><label for="textLog">수량</label><input id="textLog" name="textLog" type="text"></div>
+    <div><label for="userName">가격</label><input id="userName" name="userName" type="text"></div>
+    <div>
+      <input type="reset" value="취소">
+      <input type="submit" value="저장">
+      <input id="reloadBtn" type="button" value="목록">
+    </div>
+  </form>
+  <script>
+    const $reloadBtn = document.getElementById('reloadBtn');
+    $reloadBtn.addEventListener('click', evt=>{
+    location.href = '/products';                // GET   http://localhost:9080/products/add
+  });
+  </script>
+</body>
+</html>
